@@ -1,0 +1,522 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {    
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+
+@import './variable.scss';
+
+/**Fonts**/
+
+// @font-face {
+//     src: url(../fonts/text-fonts/Gilroy-Light.otf);
+//     font-family: gilroy-light;
+//     font-weight: 300;
+// }
+
+// @font-face {
+//     src: url(../fonts/text-fonts/Gilroy-Regular.otf);
+//     font-family: gilroy-regular;
+//     font-weight: 400;
+// }
+
+
+
+/**Font Size & Font Family**/
+
+
+.ic-banner-carousel .item .ic-banner-content-warper .content h1 span,
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+
+    @media #{$max1280} {
+        font-size: 50px;
+    }
+    
+    @media #{$max991} {
+        font-size: 44px;
+    }
+    
+    @media #{$max767} {
+        font-size: 36px;
+    }
+} 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+
+    @media #{$max1280} {
+          font-size: 36px;
+      }
+      
+      @media #{$max991} {
+          font-size: 32px;
+      }
+      
+      @media #{$max767} {
+          font-size: 24px;
+      }
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+
+    @media #{$max1280} {
+        font-size: 24px;
+    }
+    
+    @media #{$max767} {
+        font-size: 20px;
+    }
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    
+    @media #{$max1280} {
+        font-size: 20px;
+    }
+    
+    @media #{$max767} {
+        font-size: 14px;
+    }
+}
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+  
+  @media #{$max991} {
+      font-size: 18px;
+      line-height: 130%;
+  }
+  
+  @media #{$max767} {
+      font-size: 16px;
+  }
+}
+
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    margin-bottom: 15px;
+    
+    @media #{$max767} {
+        font-size: 16px;
+    }
+}
+
+hr {
+    background-color: #bbb;
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0 20px 0 30px;
+    list-style: none;
+    margin-bottom: 0;
+  
+    li,
+    li a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+  
+      @media #{$max767} {
+          font-size: 13px;
+      }
+      
+      @media #{$max575} {
+            font-size: 12px;
+      }
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  
+    &:hover {
+      text-decoration: none;
+    }
+}
+
+i {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+input {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+
+        @media #{$max767} {
+            font-size: 14px;
+        }
+        
+        @media #{$max480} {
+            font-size: 13px;
+        }
+    }
+    
+}
+
+p,
+a,
+span,
+label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    // @include transition(0.4s);
+
+    @media #{$max767} {  
+        font-size: 12px;
+    }
+
+    @media #{$max575} {  
+        line-height: 20px;
+        font-size: 11px;
+    }
+}
+
+p a {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/**Default Button**/
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+  
+
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nice-select {
+    width: 100%;
+    ul {
+        width: 100%;
+    }
+}
+
+.ic-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+// ==============================================================
+// ====================== blockquote style ======================
+// ==============================================================
+
+
+.blockquote {
+    display: block;
+    margin: 20px 0;
+    padding-left: 15px;
+    // font-family: $font-regular;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+
+} 
+
+
+
+
+table.table {
+    thead,
+    tbody {
+        tr {
+            td, th {
+                border-top: none;
+                border-bottom: none;
+                border-left: none;
+                border-right: none;
+                text-align: left;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 200%;
+                text-transform: capitalize;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                
+            }
+
+            td:first-child,
+            th:first-child {
+                padding-left: 0;
+                width: 30%;
+            }
+        }
+    }
+}
+
+.ic-background-top-repetx {
+    background-position: top;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.ic-section-heading {
+    h1 {
+        font-family: 'Lobster', sans-serif;
+
+        span {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+
+            @media #{$max1280} {
+                font-size: 36px;
+            }
+            
+            @media #{$max991} {
+                font-size: 32px;
+            }
+            
+            @media #{$max767} {
+                font-size: 24px;
+            }
+        }
+    }
+
+    P {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 150%;
+
+        @media #{$max767} {  
+            font-size: 14px;
+        }
+
+        @media #{$max575} {  
+            font-size: 13px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+// ====================================================
+// ================== slick-dots ======================
+// ====================================================
+
+// .slick-dots {
+//     // position: fixed;
+//     position: absolute;
+//     right: 5px;
+//     top: 50%;
+//     @include transform(0, -50%);
+//     z-index: 500;
+//     display: none;
+//     padding: 0; 
+
+//     @media #{$min768} {
+//         display: block;
+//     }
+
+//     @media #{$min1100} {
+//         right: 50px;
+//     }
+          
+        
+//     li{
+//         text-align: center;
+
+//         button {                
+//             // background-color: $color-black;
+//             display: block;
+//             font-family: $font-regular;
+//             font-weight: 400;
+//             font-size: 12px;
+//             line-height: 25px;
+//             // color: rgba($color-secondary, 0.5);
+//             letter-spacing: 0.1em;
+//             text-transform: uppercase;                
+//             width: 25px;
+//             height: 25px;
+//             // border: 1px solid rgba($color-secondary, 0.1);
+//             box-sizing: border-box; 
+//             @include border-radius(50%);
+//             overflow: hidden;
+//             margin-bottom: 20px;            
+//             @include transition(0.4s);
+
+//             @media #{$min1000} {
+//                 width: 40px;
+//                 height: 40px;                
+//                 line-height: 40px;
+//                 font-size: 16px;
+//                 margin-bottom: 32px;
+//             }
+        
+
+//             &:hover {
+//                 // color: rgba($color-primary, 1);
+//                 // border: 1px solid rgba($color-primary, 1);
+//             }
+//         }
+
+//         &.slick-active {
+//             button {
+//                 // color: rgba($color-primary, 1);
+//                 // border: 1px solid rgba($color-primary, 1);
+//             }
+//         }
+//     }
+// }
+
+// ===================================================
+// ================= social-links CSS ================
+// ===================================================
+
+
+// default social links
+// .ic-social-links {
+//     ul {
+//         margin-left: 0;
+//         padding-left: 0;
+
+//         @media #{$min768} {
+//             display: flex;
+//         }
+//         li {            
+//             margin-right: 32px;
+//             margin-bottom: 10px;
+
+//             @media #{$min768} {
+//                 margin-bottom: 0;
+//             }
+
+//             &:last-child {
+//                 margin-right: 0px;
+//             }
+//             a {
+//                 display: flex;
+//                 font-family: $font-regular;
+//                 font-size: 14px;
+//                 line-height: 130%;
+//                 letter-spacing: 0.1em;
+//                 text-transform: capitalize;
+//                 text-align: center;
+//                 background: transparent;
+//                 // color: rgba($color-secondary, 0.5);
+//                 @include transition(0.7s);
+
+//                 @media #{$min768} {
+//                     font-size: 15px;
+//                 }
+                
+
+//                 &:hover {
+//                     // color: $color-primary;
+//                 }
+//             }
+//             i {                
+//                 margin-right: 5px;
+
+//                 @media #{$min768} {
+//                     margin-right: 12px;
+//                 }
+
+//                 &::before {
+//                     font-size: 14px;
+//                     line-height: 14px;
+
+//                     @media #{$min768} {
+//                         font-size: 18px;
+//                         line-height: 18px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     // about, homepage, works social links
+
+//     &.ic-footer-bottom-social {
+//         padding-top: 20px;
+//         a {
+//             // color: $color-secondary;
+
+//             &:hover {
+//                 // color: $color-black;
+//             }
+//         }
+//     }
+// }

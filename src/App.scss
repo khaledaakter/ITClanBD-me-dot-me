@@ -1,0 +1,26 @@
+
+/**====================
+    1. Theme Default CSS
+========================
+**/
+
+
+/** Base SCSS **/
+
+
+@import './assets/sass/base/variable';
+@import './assets/sass/base/mixin';
+@import './assets/sass/base/spaceing';
+@import './assets/sass/base/typography';
+@import './assets/sass/base/buttons';
+@import './assets/sass/base/header';
+@import './assets/sass/base/footer';
+@import './assets/sass/base/form';
+@import './assets/sass/base/slider';
+
+
+/** Pages **/
+@import './assets/sass/pages/home.scss';
+@import './assets/sass/pages/works.scss';
+@import './assets/sass/pages/wedo';
+@import './assets/sass/pages/agency';

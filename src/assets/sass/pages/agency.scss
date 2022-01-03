@@ -1,0 +1,36 @@
+.ic-agency-body-content {
+    flex-direction: row-reverse;
+
+    .ic-agency-image {
+        text-align: center;
+
+        @media #{$max767} {
+            margin-bottom: 20px;
+        }
+    }
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.ic-agency-body-text {
+    margin-top: -7px;
+
+    @media #{$max767} {
+        margin-top: 0px;
+    }
+    h4 {
+        margin-bottom: 50px;
+
+        @media #{$max767} {
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

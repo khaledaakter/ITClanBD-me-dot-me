@@ -1,0 +1,86 @@
+/**color Variable**/
+
+$color-yellow: #ffcf00;
+$color-blue: #222d44;
+$color-white: #fff;
+$color-deep-green: #008060;
+$color-green: #00AD7C;
+$black: #000;
+
+.color-yellow {
+    color: $color-yellow;
+}
+
+.color-blue {
+  color: $color-blue;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.bg-deep-green {
+  background-color: $color-deep-green;
+}
+
+.bg-green {
+  background-color: $color-green;
+}
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+
+.bg-black {
+  background-color: $black;
+}
+
+.font-lobster {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+/**Font Variable**/
+// $font-light:gilroy-light;
+// $font-regular:gilroy-regular;
+// $font-medium:gilroy-medium;
+// $font-semiBold:gilroy-semiBold;
+// $font-bold:gilroy-bold;
+// $font-black:gilroy-black;
+
+
+// Media Query Variables
+$max1920: "only screen and (max-width: 1920px)";
+$max1800: "only screen and (max-width: 1800px)";
+$max1760: "only screen and (max-width: 1760px)";
+$max1650: "only screen and (max-width: 1650px)";
+$max1440: "only screen and (max-width: 1440px)";
+$max1366: "only screen and (max-width: 1366px)";
+$max1300: "only screen and (max-width: 1300px)";
+$max1280: "only screen and (max-width: 1280px)";
+$max1200: "only screen and (max-width: 1200px)";
+$max1199: "only screen and (max-width: 1199.98px)";
+$max1100: "only screen and (max-width: 1100px)";
+$max1024: "only screen and (max-width: 1024px)";
+$max1000: "only screen and (max-width: 1000px)";
+$max991: "only screen and (max-width: 991.98px)";
+$max767: "only screen and (max-width: 767.98px)";
+$max640: "only screen and (max-width: 640px)";
+$max575: "only screen and (max-width: 575.98px)";
+$max480: "only screen and (max-width: 480px)";
+$max375: "only screen and (max-width: 375px)";
+
+
+
+
+ 
+

@@ -1,0 +1,172 @@
+// footer top styling
+
+
+p.ic-address {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+
+
+  @media #{$max767} {
+    margin-bottom: 20px;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 30px;
+    
+    @media #{$max991} {
+      margin-bottom: 20px;
+    }
+  
+    @media #{$max767} {
+      margin-bottom: 15px;
+    }
+  }
+}
+  
+
+// footer bottom styling
+
+.ic-bottom-footer-body {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ic-scroll-top {
+  display: inline-block;
+  text-align: center;
+  line-height: 64px;
+  text-decoration: none;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+
+  svg {
+    font-size: 64px;
+    line-height: 48px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    fill: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  path {
+    fill: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  svg:hover, path:hover {
+    fill: #cccccc;
+  }
+
+  &:hover, &:focus {
+    color: #fff;
+  }
+
+  &:hover i {
+    color: #003586;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .ic-scroll-top {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .ic-scroll-top svg {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+  
+/*== footer CSS ==*/
+
+
+.ic-footer-wraper {
+  background-color: $color-yellow;
+}
+
+.ic-footer-social {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  padding: 0;
+  margin-bottom: 0;
+
+  > *:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      background-color: rgba($color-blue,0);
+      @include border-radius(5px);
+      color: $color-blue;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      font-size: 37px;
+      text-align: center;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      overflow: hidden;
+
+      // @media #{$max1800} {
+      //     height: 30px;
+      //     width: 30px;
+      //     line-height: 30px;
+      //     font-size: 16px;
+        
+      // }
+
+      i,
+      svg {
+        font-size: 30px;
+        margin-top: -10px;
+      }
+
+      &:hover {
+        background-color: rgba($color-blue,1);
+        color: $color-yellow;
+      }
+    }
+  }
+}
+
+.ic-footer-text {
+  max-width: 450px;
+  margin: 0 auto;
+}
+  
+  
+  
+  
